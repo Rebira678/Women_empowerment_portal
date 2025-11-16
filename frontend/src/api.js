@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api"; // change if deployed
+const API_URL = process.env.REACT_APP_API_URL ; 
 
 // --- AUTH ---
 export const registerUser = async ({ name, email, password }) => {
